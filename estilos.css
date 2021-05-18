@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #282e72;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    height: 100vh;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.user-form{
+    width: 100%;
+    max-width: 800px;
+}
+
+.user-form input{
+    width: 100%;
+    display: block;
+    background-color: #4c2885;
+    border: none;
+    border-radius: 10px;
+    color: #ffff;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    font-family: inherit;
+    font-size: 1rem;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.user-form input:focus{
+    outline: none;
+}
+
+.user-form input::placeholder{
+    color: rgb(204, 199, 199);
+}
+
+.card{
+    max-width: 800px;
+    background-color: #4c2885;
+    border-radius: 20px;
+    display: flex;
+    padding: 3rem;
+    margin: 0 1.5rem;
+}
+
+.avatar{
+    border-radius: 50%;
+    border: 10px solid #282a72;
+    height: 150px;
+    width: 150px;
+}
+
+.user-info{
+    color: #eee;
+    margin-left: 2rem;
+}
+
+.user-info h2{
+    margin-top: 0;
+    position: relative;
+    bottom: 15px;
+}
+
+.user-info ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    max-width: 400px;
+    margin-top: 0.5rem;
+}
+
+.user-info ul li{
+    display: flex;
+    align-items: center;
+    margin-top: 0.1rem;
+    margin: 10px;
+    font-weight: 600;
+}
+
+.user-info ul li strong{
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+}
+
+.repos{
+    text-decoration: none;
+    color: #fff;
+    background-color: #212A72;
+    font-size: 0.7rem;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+    display: inline-block;
+    padding: 0.25rem 0.50rem;
+}
+
+footer h1{
+    font-size: .7rem;
+    position: relative;
+    display: block;;
+}
+
+footer{
+    display: flex;
+    align-items: flex-end;
+    margin-top: 15vh;;
+}
+
+@media(max-width: 500px){
+    .card{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .user-form{
+        max-width: 400px;
+    }
+}
