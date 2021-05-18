@@ -2,7 +2,7 @@
 # githubProfiles
 Buscador de perfiles de GitHub 
 
-Proyecto que trata de buscar a los usuarios utilizando la API de GitHub mediante el metodo FETCH de javascript.
+Proyecto que trata de buscar a los usuarios utilizando la API de GitHub a través de AXIOS, diferenciandome de otros proyectos donde he utilizado FETCH.
 
 URL: https://sclericigithubprofiles.netlify.app/
 
